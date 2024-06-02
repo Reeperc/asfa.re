@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: #80e6fd;
+    background: #9eecfd;
 }
 
 header {
@@ -12,6 +12,7 @@ header {
     align-items: center;
     background-color: #4CAF50;
     padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 header .logo img {
@@ -24,6 +25,7 @@ header nav ul {
     padding: 0;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 header nav ul li a {
@@ -63,28 +65,23 @@ header .search button {
     text-align: center;
     color: white;
     overflow: hidden;
-}
-
-.hero video {
-    width: 100%;
-    height: auto;
-    filter: brightness(0.5);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .hero-text {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .hero-text h1 {
     font-size: 3em;
     margin: 0;
+    padding: 0 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-text button {
@@ -96,6 +93,7 @@ header .search button {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 .hero-text button:hover {
@@ -124,15 +122,16 @@ section .cards {
 }
 
 section .card {
-    background-color: #1c95ff;
+    background-color: #fff;;
     padding: 20px;
-    border: 4px solid #fff;
+    border: 4px solid #ff38c4;
     border-radius: 55px;
-    flex: 1;
     text-align: center;
     min-width: 200px;
     transition: transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
 }
 
 section .card:hover {
@@ -144,7 +143,7 @@ section .card img {
     margin-bottom: 10px;
 }
 
-section .testimonials .testimonial {
+section .testimonial {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
@@ -164,13 +163,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 footer .contact-info,
 footer .social-media,
 footer .legal {
     flex: 1;
-    text-align: center;
+    padding: 10px;
 }
 
 footer .social-media a {
@@ -181,4 +182,166 @@ footer .social-media a {
 
 footer .social-media a:hover {
     color: #FFD700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header,
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text button {
+        font-size: 0.9em;
+    }
+
+    section .cards {
+        flex-direction: column;
+    }
+}
+.card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #00adfd;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+    opacity: 1;
+}
+
+.card button:hover {
+    background-color: #1886cb;
+}
+
+
+.president {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.president h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0d82ca;
+}
+
+.president-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.president-content img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.president-content p {
+    max-width: 600px;
+    line-height: 1.6;
+    color: #555;
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+    .president-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .president-content img {
+        max-width: 80%;
+    }
+}
+.sanitary-info {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.sanitary-info h2, .sanitary-info h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.sanitary-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.sanitary-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sanitary-info ul li {
+    background-color: #f0f2f5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sanitary-info a {
+    color: #00adfd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sanitary-info a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
 }

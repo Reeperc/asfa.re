@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pôle Sanitaire - Association Saint-François d'Assise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.jpg" alt="Logo ASFA">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#asfa">Présentation de l'ASFA</a></li>
+                <li><a href="index.html#hr">Ressources Humaines</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Rechercher...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text animate__animated animate__fadeInUp">
+            <h1>Pôle Sanitaire</h1>
+            <p>Bienvenue sur la page dédiée au Pôle Sanitaire de l'Association Saint-François d'Assise.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="sanitary-info">
+            <h2>BIENVENUE SUR LE SITE DE L'HOPITAL D'ENFANTS</h2>
+            <p>Soucieux de la qualité de l'accueil réservé à nos patients, notre site internet a pour ambition de vous donner les informations pratiques essentielles au séjour de votre enfant.</p>
+            <p>Nos différentes rubriques vous permettront de découvrir nos engagements en termes de qualité et de sécurité des soins, mais aussi la diversité des prises en charges proposées dans le cadre des filières pédiatriques ou de rééducation.</p>
+            <p>Situé au centre-ville de Saint-Denis de la Réunion, à proximité du Jardin de l'Etat, notre établissement de Soins Médicaux et de Réadaptation (SMR) a vocation à accueillir les enfants et adolescents de la Réunion et de Mayotte, pour une hospitalisation complète ou de jour.</p>
+            <p>Avec 89 lits et places, et près de 190 professionnels hospitaliers à votre service, l'Hôpital d'Enfants met tout en œuvre pour qu'au-delà des soins, les droits des usagers ne soient pas un vain mot. Pour vous, parents, votre présence quotidienne est souhaitée, notre priorité est de vous faciliter l'accès au chevet de votre enfant.</p>
+            <p>Je vous souhaite une bonne visite sur notre site internet et un agréable séjour dans notre établissement.</p>
+            <p><strong>Le Directeur.</strong></p>
+
+            <h3>Pour toutes demandes, contactez-nous :</h3>
+            <p>Standard : 0262 90 87 00 - Fax : 0262 93 89 58</p>
+            <p>E-mail : <a href="mailto:secdirection.he@asfa.re">secdirection.he@asfa.re</a></p>
+
+            <h3>Documents à télécharger (PDF)</h3>
+            <ul>
+                <li><a href="documents/livret_accueil_2022.pdf" download>Livret d'Accueil</a></li>
+                <li><a href="documents/Fiches-amovibles-2018-HE.pdf" download>Fiches d'information LA : Plan d'accès/ Coordonnées des services de l'HE/ Associations et réseaux</a></li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contactez-Nous</h2>
+            <p>Pour plus d'informations sur nos services de soins ou pour prendre rendez-vous, veuillez nous contacter.</p>
+            <p>Téléphone: 01 23 45 67 89</p>
+            <p>Email: <a href="mailto:contact@asfa.org">contact@asfa.org</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contactez-nous: 01 23 45 67 89</p>
+            <p>Email: <a href="mailto:contact@asfa.org">contact@asfa.org</a></p>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="legal">
+            <p>© 2024 Association Saint-François d'Assise. Tous droits réservés.</p>
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.reveal-btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const target = document.querySelector(button.dataset.target);
+            if (target) {
+                target.classList.toggle('hidden');
+            }
+        });
+    });
+});
+</script>
