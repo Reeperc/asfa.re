@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association Saint-François d'Assise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.jpg" alt="Logo ASFA">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Présentation de l'ASFA</a></li>
+                <li><a href="#">Ressources Humaines</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Rechercher...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <source src="background-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text animate__animated animate__fadeInUp">
+            <h1>Un engagement au quotidien</h1>
+            <button>En savoir plus</button>
+        </div>
+    </section>
+
+    <main>
+        <section class="president">
+            <h2 class="animate__animated animate__fadeIn">Mot du Président</h2>
+            <img src="president.jpg" alt="Président" class="animate__animated animate__fadeInLeft">
+            <p class="animate__animated animate__fadeInRight">L'Association Saint François d'Assise compte plusieurs décennies d'engagement...</p>
+        </section>
+
+        <section class="activities">
+            <h2 class="animate__animated animate__fadeIn">Nos Pôles d'Activités</h2>
+            <div class="cards">
+                <div class="card animate__animated animate__zoomIn">
+                    <img src="healthcare-icon.svg" alt="Pôle Sanitaire">
+                    <h3>Pôle Sanitaire</h3>
+                </div>
+                <div class="card animate__animated animate__zoomIn">
+                    <img src="elderly-care-icon.svg" alt="Pôle Médico Social personnes âgées">
+                    <h3>Pôle Médico Social personnes âgées</h3>
+                </div>
+                <div class="card animate__animated animate__zoomIn">
+                    <img src="disability-care-icon.svg" alt="Pôle Médico Social Handicap">
+                    <h3>Pôle Médico Social Handicap</h3>
+                </div>
+                <div class="card animate__animated animate__zoomIn">
+                    <img src="education-icon.svg" alt="Pôle Formation">
+                    <h3>Pôle Formation</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2 class="animate__animated animate__fadeIn">Témoignages</h2>
+            <div class="testimonial animate__animated animate__fadeInUp">
+                <p>"L'ASFA m'a beaucoup aidé..."</p>
+                <span>- Jean Dupont</span>
+            </div>
+            <div class="testimonial animate__animated animate__fadeInUp">
+                <p>"Une équipe formidable..."</p>
+                <span>- Marie Dubois</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contactez-nous: 01 23 45 67 89</p>
+            <p>Email: contact@asfa.org</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="legal">
+            <p>© 2024 Association Saint-François d'Assise. Tous droits réservés.</p>
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- //fs -->
