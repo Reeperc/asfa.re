@@ -345,3 +345,43 @@ footer .social-media a:hover {
     line-height: 1.6;
     color: #555;
 }
+
+.rose{
+    color: rgb(231, 53, 152);
+}
+.violet{
+    color:rgb(16, 33, 139);
+}
+.jaune{
+    color: rgb(251, 177, 1)}
+
+.vertc{
+    color: rgb(204, 228, 15);
+}
+.vertf{
+    color: rgb(125, 194, 26);
+}
+.vertff{
+    color: rgb(55, 155, 44);
+}
+.vertfff{
+    color: rgb(3, 109, 46);
+}
+.rosec{
+    color: rgb(239, 127, 181);
+}
+.orange{
+    color: rgb(252, 102, 1);
+}
+.jaune{
+    color:rgb(253, 240, 1);
+}
+.bleu{
+    color:rgb(3, 156, 183);
+}
+.bleuc{
+    color:rgb(78, 186, 213);
+}
+.red{
+    color:rgb(241, 0, 2);
+}
